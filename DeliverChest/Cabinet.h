@@ -12,17 +12,10 @@ struct Pocket
 	int direction;
 };
 
-struct Manager
-{
-	string managerName;
-	string managerPhone;
-};
-
 class Cabinet
 {
-	static int count;//快递柜的总个数，每次生成一个快递柜自动加1
+
 private:
-	string code;
 	string place;
 	int pickCode;
 public:
@@ -30,8 +23,6 @@ public:
 	Cabinet(string=" ");
 	~Cabinet();
 
-	void setCode(int);
-	string getCode() const;
 
 	void setPlace(string);
 	string getPlace() const;
@@ -47,12 +38,6 @@ public:
 
 	void setDirection(int);
 	int getDirection() const;
-
-	void setManagerName(string);
-	string getManagerName() const;
-
-	void setManagerPhone(string);
-	string getManagerPhone() const;
 
 	void print() const;
 
